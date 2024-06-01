@@ -1,4 +1,4 @@
-# Set the minimum length for the password
+
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     print_stars(password)
 
 def get_length():
-    # Get the minimum length of the password.
+    # Set the minimum length for the password
     min = int(input("Please enter the minimum length of password: "))
     return min
 def get_password(min):

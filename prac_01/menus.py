@@ -15,8 +15,8 @@ display finished message
 """
 
 name = input("Enter name: ")
-menu = "(H)ello\n(G)oodbye\n(Q)uit"
-print(menu)
+MENU = "(H)ello\n(G)oodbye\n(Q)uit"
+print(MENU)
 choice = input(">>> ").upper()
 while choice != "Q":
     if choice == "H":
@@ -25,7 +25,7 @@ while choice != "Q":
         print("Goodbye ",name)
     else:
         print("Invalid choice")
-    print(menu)
+    print(MENU)
     choice = input(">>> ").upper()
 print("Finished.")
 

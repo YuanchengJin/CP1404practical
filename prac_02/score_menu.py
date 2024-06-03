@@ -13,7 +13,10 @@ while choice != <quit option>
     display menu
     get choice
 <do final thing, if needed>"""
-
+MINI_SCORE = 0
+MAX_SCORE = 100
+PASS_THREEFOLD = 50
+EXCELLENT_SCORE = 90
 def main():
     score = 0
     display_menu()
@@ -44,15 +47,15 @@ def display_menu():
 def get_score():
     # get score from user.
     score = float(input("Enter score: "))
-    while score < 0 or score > 100:
+    while score < MINI_SCORE or score > MAX_SCORE:
         print("Invalid score. Please enter a score between 0 and 100.")
         score = float(input("Enter score: "))
     return score
 def print_result(score):
     # analyse the score and print the result
-    if score < 50:
+    if score < PASS_THREEFOLD:
         print("Bad")
-    elif score < 90:
+    elif score < EXCELLENT_SCORE:
         print("Passable")
     else:
         print('Excellent')

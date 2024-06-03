@@ -1,6 +1,7 @@
 items = int(input("Number of items: "))
 total_price = 0
 DISCOUNT = 0.1
+HIGH_PRICE = 100
 for i in range(items):
     price = float(input("Price of item: "))
     total_price  += price

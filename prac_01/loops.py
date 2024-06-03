@@ -10,11 +10,11 @@ for i in range(20,0,-1):
     print(i, end=' ')
 print()
 
-n = int(input('Enter a number:'))
-for i in range(n):
+num_of_stars = int(input('Enter a number:'))
+for i in range(num_of_stars):
     print('*',end=' ')
 print()
 
-for i in range(1,n+1):
+for i in range(1,num_of_stars +1):
     print('*' * i )
 print()

@@ -28,7 +28,7 @@ print(result)
  Use with instead of open and close for this question."""
 total = 0
 
-with open('numbers.txt','r') as in_file:
+with open('numbers.txt', 'r') as in_file:
     for line in in_file:
         total += int(line.strip())
 

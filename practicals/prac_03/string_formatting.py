@@ -32,13 +32,13 @@ numbers = [1, 19, 123, 456, -25]
 for i, number in enumerate(numbers, 1):
     print(f"Number {i} is {number:5}")
 
-print(f"{year} {name} for about {round(cost)}")
+print(f"{year} {name} for about {round(cost):,.0f}")
 # 1922 Gibson L-5 CES for about $16,036!
 
 number = 2
 power = 10
 for i in range (0,power+1):
-    print(f"{number} ^ {i} is    {number ** i:>6}")
+    print(f"{number} ^ {i:>2} is {number ** i:>6}")
 
 # produce the following right-aligned output (DO NOT use a list):
 # 2 ^ 0 is    1

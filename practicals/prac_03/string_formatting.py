@@ -38,7 +38,7 @@ print(f"{year} {name} for about {round(cost)}")
 number = 2
 power = 10
 for i in range (0,power+1):
-    print(f"{number} ^ {i} is   {number ** i:>6}")
+    print(f"{number} ^ {i} is    {number ** i:>6}")
 
 # produce the following right-aligned output (DO NOT use a list):
 # 2 ^ 0 is    1

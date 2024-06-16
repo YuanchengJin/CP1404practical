@@ -13,6 +13,7 @@ def main():
     numbers = get_numbers_from_user()
     print_numbers(numbers)
     display_results(numbers)
+    check_security()
 
 def get_numbers_from_user():
     # Prompt the user to input a series of numbers and return them as a list.
@@ -37,7 +38,10 @@ def display_results(numbers):
     print(f"The smallest number is {smallest_number}")
     print(f"The largest number is {largest_number}")
     print(f"The average of the numbers is {average_number:.1f}")
-
+def check_security():
+   usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+   username_from_user = input("Please enter your username: ")
+   print("Access granted" if username_from_user in usernames else "Access denied")
 main()
 
 

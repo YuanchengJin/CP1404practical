@@ -104,22 +104,25 @@ print（names）
 # main()
 
 
-def main():
-    numbers = get_numbers()
-    square_numbers(numbers)
-    display_numbers(numbers)
-
-def get_numbers():
-    text = input("Please: ").split(",")
-    return text
-
-def square_numbers(numbers):
-    for i in range (len(numbers)):
-        numbers[i] = float(numbers[i]) ** 2
-
-def display_numbers(numbers):
-    print("..".join(str(number)for number in sorted(numbers,reverse=True)))
-
-main()
-
-
+# def main():
+#     numbers = get_numbers()
+#     square_numbers(numbers)
+#     display_numbers(numbers)
+#
+# def get_numbers():
+#     text = input("Please: ").split(",")
+#     return text
+#
+# def square_numbers(numbers):
+#     for i in range (len(numbers)):
+#         numbers[i] = float(numbers[i]) ** 2
+#
+# def display_numbers(numbers):
+#     print("..".join(str(number)for number in sorted(numbers,reverse=True)))
+#
+# main()
+#
+with open('numbers.txt') as in_file:
+    # lines = [line.strip() for line in in_file.readlines()]
+    lines = [line.strip() for line in in_file.readlines()]
+    print(lines)

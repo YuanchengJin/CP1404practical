@@ -23,7 +23,7 @@ def get_numbers_from_user():
         numbers.append(number)
     return numbers
 def print_numbers(numbers):
-    # Print 5 numbers
+    # Print 5 numbers.
     for number in numbers:
         print(f"Number: {number}")
 def display_results(numbers):

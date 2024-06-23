@@ -20,6 +20,7 @@ for code, name in CODE_TO_NAME.items():
     print(f"{code:<{max_code_len}} is {name:<{max_name_len}}")
 
 state_code = input("Enter short state: ").upper()
+
 while state_code != "":
     try:
         print(state_code, "is", CODE_TO_NAME[state_code])

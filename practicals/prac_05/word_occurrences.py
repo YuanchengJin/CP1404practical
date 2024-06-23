@@ -1,6 +1,7 @@
 text = "this is a collection of words of nice words this is a fun thing it is"
 word_to_count = {}
 words = text.lower().split(" ")
+
 for word in words:
     try:
         word_to_count[word] += 1

@@ -15,8 +15,8 @@ COLOR_TO_HEX = {
 print("Available colors and their hex codes:")
 for color, hex_code in COLOR_TO_HEX.items():
     print(f"{color:<20} : {hex_code}")
-
 color_name = input("Enter color name: ").strip().lower()
+
 while color_name:
     normalized_color_name = color_name.title().replace(" ", "")
     try:

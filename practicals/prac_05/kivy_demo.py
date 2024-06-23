@@ -15,7 +15,7 @@ class KivyDemo(App):
         self.names = ["Lindsay", "Osmond", "Paul"]
 
     def build(self):
-        """Construct the dynamic widgets."""
+        # Construct the dynamic widgets.
         self.title = "Hello world!"
         self.root = Builder.load_file('kivy_layout.kv')
         for name in self.names:
@@ -25,11 +25,11 @@ class KivyDemo(App):
         return self.root
 
     def handle_name_button(self, instance):
-        """Handle presses on the name button to greet people."""
+        # Handle presses on the name button to greet people.
         print("Hello", instance.text)
 
     def handle_press(self, amount):
-        """Handle presses on the up/down buttons to change counter."""
+        # Handle presses on the up/down buttons to change counter.
         self.counter += amount
         self.status_text = f"The count is: {self.counter}"
 

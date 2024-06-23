@@ -30,7 +30,7 @@ def read_file(filename):
 def count_champions(data):
     # Count the number of wins by each champion.
     champion_counts = {}
-    for row in data[1:]:  # Skip the header row
+    for row in data[1:]:
         champion = row[2]
         if champion in champion_counts:
             champion_counts[champion] += 1
